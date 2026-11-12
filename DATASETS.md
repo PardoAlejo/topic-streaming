@@ -11,15 +11,17 @@ Datasets live in `datasets/`. Below is each dataset with its license, source, an
 | `datasets/hlgd/` | Yes, code + data (`hlgd_classification/{train,dev,test}.json`, release 0.1) | tingofurro/headline_grouping@47a30ed |
 | `datasets/wcep/` | Yes, code only | complementizer/wcep-mds-dataset@8aa8418 |
 | `datasets/uci-news-aggregator/` | Yes, `uci-news-aggregator.csv.gz` (422,419 rows, 7,230 stories; comma-separated with header, from a GitHub mirror, not the official UCI zip) | Mayank-Bhatia/News-Classification `data/uci-news-aggregator.csv` |
-| `datasets/miranda-zenodo/` | No (gitignored, ~1.2 GB embeddings) | |
-| `datasets/wcep-data/` | No (gitignored) | |
+| `datasets/miranda-zenodo/` | Yes: labels (`miranda_{train,test}.csv`) + MPNet embeddings, gzipped and split into `.part-NN` files (<100 MB each); run `scripts/join_parts.sh`. MD5s match Zenodo. | Zenodo 6630367 |
+| `datasets/wcep-data/` | Yes: `test.jsonl.gz`, `val.jsonl.gz`, and `train.jsonl.gz` split into `.part-NN` files; run `scripts/join_parts.sh` | WCEP Google Drive folder |
 | `datasets/streambench/` | No (gitignored, upstream has no license file) | |
 
-Fetch everything that is not committed with:
+After cloning, rebuild the split files:
 
 ```bash
-bash scripts/download_datasets.sh          # SKIP_MPNET=1 to skip the 1.2 GB embeddings
+bash scripts/join_parts.sh
 ```
+
+Only StreamBench (code, no license file upstream) is not committed. `scripts/download_datasets.sh` re-downloads everything from the original sources if needed (SKIP_MPNET=1 skips the 1.2 GB embeddings).
 
 Each committed directory keeps its upstream `LICENSE`.
 

@@ -1,9 +1,11 @@
-# Dataset files too large for git or hosted off GitHub — fetch with scripts/download_datasets.sh
+# Not committed (see DATASETS.md)
 datasets/uci-news-aggregator/*.zip
 datasets/uci-news-aggregator/newsCorpora.csv
 datasets/uci-news-aggregator/2pageSessions.csv
-datasets/miranda-zenodo/
-datasets/wcep-data/
+# rebuilt locally by scripts/join_parts.sh
+datasets/miranda-zenodo/*_mpnet.csv
+datasets/miranda-zenodo/*.csv.gz
+datasets/wcep-data/train.jsonl.gz
 datasets/streambench/
 datasets/hlgd/*.zip
 datasets/hlgd/*.bin

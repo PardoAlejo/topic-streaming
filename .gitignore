@@ -1,0 +1,11 @@
+# Dataset files (too large for git — download via scripts)
+datasets/
+
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+.venv/

@@ -8,7 +8,7 @@ Datasets live in `datasets/`. Below is each dataset with its license, source, an
 |---|---|---|
 | `datasets/locomo/` | Yes, code + data (`data/locomo10.json`) | snap-research/locomo@3eb6f2c |
 | `datasets/miranda-news-clustering/` | Yes, eval code only | Priberam/news-clustering@27dbbc2 |
-| `datasets/hlgd/` | Yes, code only (release data not included) | tingofurro/headline_grouping@47a30ed |
+| `datasets/hlgd/` | Yes, code + data (`hlgd_classification/{train,dev,test}.json`, release 0.1) | tingofurro/headline_grouping@47a30ed |
 | `datasets/wcep/` | Yes, code only | complementizer/wcep-mds-dataset@8aa8418 |
 | `datasets/uci-news-aggregator/` | No (gitignored) | |
 | `datasets/miranda-zenodo/` | No (gitignored, ~1.2 GB embeddings) | |

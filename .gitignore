@@ -5,7 +5,6 @@ datasets/wcep-data/
 datasets/streambench/
 datasets/hlgd/*.zip
 datasets/hlgd/*.bin
-datasets/hlgd/hlgd_classification/
 
 # macOS
 .DS_Store

@@ -1,5 +1,11 @@
-# Dataset files (too large for git — download via scripts)
-datasets/
+# Dataset files too large for git or hosted off GitHub — fetch with scripts/download_datasets.sh
+datasets/uci-news-aggregator/
+datasets/miranda-zenodo/
+datasets/wcep-data/
+datasets/streambench/
+datasets/hlgd/*.zip
+datasets/hlgd/*.bin
+datasets/hlgd/hlgd_classification/
 
 # macOS
 .DS_Store

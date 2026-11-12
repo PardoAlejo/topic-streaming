@@ -1,6 +1,27 @@
 # Datasets
 
-Datasets are stored locally in `datasets/` (gitignored due to size). Below is each dataset with its license, source, and download instructions.
+Datasets live in `datasets/`. Below is each dataset with its license, source, and download instructions.
+
+## What is committed vs. downloaded
+
+| Path | In repo? | Upstream commit |
+|---|---|---|
+| `datasets/locomo/` | Yes, code + data (`data/locomo10.json`) | snap-research/locomo@3eb6f2c |
+| `datasets/miranda-news-clustering/` | Yes, eval code only | Priberam/news-clustering@27dbbc2 |
+| `datasets/hlgd/` | Yes, code only (release data not included) | tingofurro/headline_grouping@47a30ed |
+| `datasets/wcep/` | Yes, code only | complementizer/wcep-mds-dataset@8aa8418 |
+| `datasets/uci-news-aggregator/` | No (gitignored) | |
+| `datasets/miranda-zenodo/` | No (gitignored, ~1.2 GB embeddings) | |
+| `datasets/wcep-data/` | No (gitignored) | |
+| `datasets/streambench/` | No (gitignored, upstream has no license file) | |
+
+Fetch everything that is not committed with:
+
+```bash
+bash scripts/download_datasets.sh          # SKIP_MPNET=1 to skip the 1.2 GB embeddings
+```
+
+Each committed directory keeps its upstream `LICENSE`.
 
 ## Eval Priority Order
 

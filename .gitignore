@@ -1,5 +1,7 @@
 # Dataset files too large for git or hosted off GitHub — fetch with scripts/download_datasets.sh
-datasets/uci-news-aggregator/
+datasets/uci-news-aggregator/*.zip
+datasets/uci-news-aggregator/newsCorpora.csv
+datasets/uci-news-aggregator/2pageSessions.csv
 datasets/miranda-zenodo/
 datasets/wcep-data/
 datasets/streambench/
